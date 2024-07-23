@@ -7,8 +7,8 @@ router.post('/', async (req, res) => {
     const data = req.body;
   const newMenu = Menu(data);
     const response = await newMenu.save();
-    console.log(response)
-    res.status(200).json(response)
+    console.log(` added dish: ${response.name}`)
+    res.status(200).json(`Added Dish:${response.name}`)
   }
   catch (err) {
     console.log(err)
