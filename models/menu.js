@@ -41,5 +41,5 @@ module.exports = Menu;
 //         "panner",
 //         "rice"
 //     ],
-//     "num_sales": 5
+//     "num_sales": 50
 // }
