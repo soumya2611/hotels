@@ -6,7 +6,14 @@ const bodyParser = require('body-parser');
 app.use(bodyParser.json()); 
 PORT = process.env.PORT ||3000;
 
-app.get('/', (req, res) => {
+//Middleware function
+const logRequest = (req, res, next) => {
+  console.log(`[${new Date().toLocaleString()}] req to ${req.originalUrl}`)
+  next();
+}
+app.use(logRequest)
+
+app.get('/',(req, res) => {
   res.send("WELCOME TO THE HOTEL")
 })
 
