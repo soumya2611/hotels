@@ -3,3 +3,7 @@ LINK : https://hotels-w3vc.onrender.com/
 IN THIS HOTEL API : I AM ADDED MENU AND HOTEL WORKERS 
 CONNECTED DATABASE MONGO DB 
 ADDED ALL THE CRUD OPERATIONS 
+MENU : https://hotels-w3vc.onrender.com/menu
+PERSON: https://hotels-w3vc.onrender.com/person
+ALL MENU AND PERSON HAVE UNIQUE ID . 
+THANK YOU
