@@ -81,7 +81,9 @@ module.exports = Person;
 //     "mobile":"987465123",
 //     "email":"workforsoumya21@gmail.com",
 //     "address":"khordha",
-//     "salary":"5000"
+//         "salary": "5000",
+//         "username": "soumya",
+//             "password":"soumya@1"
 // }
 
 

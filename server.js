@@ -15,15 +15,15 @@ app.use(logRequest)
 app.use(passport.initialize());
 const localAuthMiddleware=passport.authenticate('local',{session:false})
 
-app.get('/',(req, res) => {
+app.get('/',localAuthMiddleware,(req, res) => {
   res.send("WELCOME TO THE HOTEL");
 });
 
 const personRouter = require('./routes/personRoutes');
-app.use('/person', localAuthMiddleware, personRouter);
+app.use('/person', personRouter);
 
 const menuRouter = require('./routes/menuRoutes');
-app.use('/menu', menuRouter);
+app.use('/menu',localAuthMiddleware, menuRouter);
 
 PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
